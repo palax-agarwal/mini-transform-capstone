@@ -1,0 +1,1 @@
+{"name": "quickcheck", "params": 171341, "test": {"loss": 3.022477157631122, "exact": 0.0, "token": 0.06304642857142864}, "hist": {"step": [10], "train_loss": [3.197855611015032], "val_loss": [3.0048410319600904], "val_exact": [0.0]}, "seconds": 4.042532205581665, "cfg": {"steps": 10, "bs": 64, "peak_lr": 0.0015, "seed": 0}}

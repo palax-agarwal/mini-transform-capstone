@@ -1,0 +1,12 @@
+PASS T1 output shape (B, T_tgt, vocab) (3, 5, 13)
+PASS T2 causal mask (no look-ahead) 
+PASS T3 padding invariance (src + tgt pads masked) max diff 1.3e-15
+PASS T4 greedy decoding identical batched vs single 
+PASS T5 attention rows sum to 1 
+PASS T5c  exact zero weight on pad keys 
+PASS T6 words -> number round trip for all 0..9999 
+PASS T6b train/val/test disjoint & cover 10,000 numbers 8000/1000/1000
+PASS T7 overfits a single batch (loss < 0.01 in 300 steps) final loss 0.00020
+PASS T8 same seed -> bit-identical results 1.23286584 vs 1.23286584
+
+10/10 tests passed
